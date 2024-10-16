@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Bleu de Chanel EDT",
+        "path": "chanel-bleu-de-chanel-edt",
+        "version": "edt",
+        "descripcion": "Bleu de Chanel de Chanel es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Bleu de Chanel se lanzó en 2010. La Nariz detrás de esta fragancia es Jacques Polge. Las Notas de Salida son limón (lima ácida), menta, pimienta rosa y toronja (pomelo); las Notas de Corazón son jengibre, notas acuáticas, jazmín, nuez moscada y cedro; las Notas de Fondo son ládano, incienso, cedro de Virginia, vetiver y almizcle blanco.",
+        "tamaño": 100,
+        "precio": 420,
+        "imagen": "https://yourperfumeshop.co.uk/cdn/shop/files/bleu-de-chanel-advert-parfum_800x.png?v=1717608283"
+    },
+    {
+        "nombre": "Allure Homme Sport eau Extreme",
+        "path": "chanel-allure-homme-sport-eau-extreme",
+        "version": "edp",
+        "descripcion": "Allure Homme Sport Eau Extrême de Chanel es una fragancia de la familia olfativa Amaderada Especiada para Hombres. Allure Homme Sport Eau Extrême se lanzó en 2012. La Nariz detrás de esta fragancia es Jacques Polge. Las Notas de Salida son mandarina, ciprés, menta, salvia y naranja; las Notas de Corazón son pimienta rosa, nuez moscada, cedro y vetiver; las Notas de Fondo son haba tonka, vainilla, notas amaderadas, limón (lima ácida) y almizcle blanco.",
+        "tamaño": 100,
+        "precio": 420,
+        "imagen":"https://yourperfumeshop.co.uk/cdn/shop/files/bleu-de-chanel-advert-parfum_800x.png?v=1717608283"
+    },
+    {
+        "nombre": "Gabrielle essence",
+        "path": "chanel-gabrielle-essence",
+        "version": "edp",
+        "descripcion": "Gabrielle Essence de Chanel es una fragancia de la familia olfativa Floral para Mujeres. Gabrielle Essence se lanzó en 2019. La Nariz detrás de esta fragancia es Olivier Polge. Las Notas de Salida son naranja, toronja (pomelo) y grosellas negras; las Notas de Corazón son jazmín, ylang-ylang, tuberosa y flor de azahar del naranjo; las Notas de Fondo son sándalo, almizcle blanco y notas amaderadas.",
+        "tamaño": 100,
+        "precio": 420,
+        "imagen":"https://yourperfumeshop.co.uk/cdn/shop/files/bleu-de-chanel-advert-parfum_800x.png?v=1717608283"
+    }
+]

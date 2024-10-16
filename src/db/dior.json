@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Homme EDT",
+        "path": "dior-homme-edt",
+        "version": "edt",
+        "descripcion": "Dior Homme es una fragancia de la familia olfativa amaderada floral aldehídica. La nariz detrás de esta fragancia es Olivier Polge. Las Notas de Salida son lavanda, salvia y bergamota; las Notas de Corazón son iris, ámbar y cacao; las Notas de Fondo son vetiver, pachulí y cuero.",
+        "tamaño": 100,
+        "precio": 300,
+        "imagen": "https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw6b98ef9e/images/beauty/04-TRIAXE/2024/SUM24/Campaign/SummerAnim_Mood_SVG-EDT_1688x3000.jpg"
+    },
+    {
+        "nombre": "Sauvage EDT",
+        "path": "dior-sauvage-edt",
+        "version": "edt",
+        "descripcion": "Sauvage de Dior es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Sauvage se lanzó en 2015. La Nariz detrás de esta fragancia es François Demachy. Las Notas de Salida son pimienta y bergamota de Calabria; las Notas de Corazón son lavanda, pimienta de Sichuan, geranio, pachulí y vetiver; las Notas de Fondo son ládano y ambroxan.",
+        "tamaño": 100,
+        "precio": 350,
+        "imagen": "https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw6b98ef9e/images/beauty/04-TRIAXE/2024/SUM24/Campaign/SummerAnim_Mood_SVG-EDT_1688x3000.jpg"
+    },
+    {
+        "nombre": "Sauvage Parfum",
+        "path": "dior-sauvage-parfum",
+        "version": "parfum",
+        "descripcion": "Sauvage Parfum de Dior es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Esta fragrancia es nueva. Sauvage Parfum se lanzó en 2019. La Nariz detrás de esta fragancia es François Demachy. Las Notas de Salida son mandarina y bergamota; las Notas de Corazón son pimienta y lavanda; las Notas de Fondo son vetiver, pachulí, cedro y ládano.",
+        "tamaño": 100,
+        "precio": 400,
+        "imagen": "https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw6b98ef9e/images/beauty/04-TRIAXE/2024/SUM24/Campaign/SummerAnim_Mood_SVG-EDT_1688x3000.jpg"
+    }
+]

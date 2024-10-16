@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Fame EDT",
+        "path": "paco-rabanne-fame-edt",
+        "version": "edt",
+        "descripcion": "Fame de Paco Rabanne es una fragancia de la familia olfativa Amaderada Aromática para Hombres. Fame se lanzó en 2015. La Nariz detrás de esta fragancia es Olivier Polge. Las Notas de Salida son pimienta rosa, cardamomo y limón (lima ácida); las Notas de Corazón son hojas de violeta, salvia y nuez moscada; las Notas de Fondo son vetiver, haba tonka y ámbar.",
+        "tamaño": 100,
+        "precio": 300,
+        "imagen": "https://home.ripley.com.pe/Attachment/WOP_5/2014336552209/2014336552209-4.jpg"
+    },
+    {
+        "nombre": "Invictus EDT",
+        "path": "paco-rabanne-invictus-edt",
+        "version": "edt",
+        "descripcion": "Invictus de Paco Rabanne es una fragancia de la familia olfativa Amaderada Acuática para Hombres. Invictus se lanzó en 2013. Invictus fue creada por Veronique Nyberg, Anne Flipo, Olivier Polge y Dominique Ropion. Las Notas de Salida son toronja (pomelo), notas marinas y mandarina; las Notas de Corazón son hoja de laurel y jazmín; las Notas de Fondo son madera de gaiac, musgo de roble, pachulí y ámbar gris.",
+        "tamaño": 100,
+        "precio": 350,
+        "imagen": "https://home.ripley.com.pe/Attachment/WOP_5/2014336552209/2014336552209-4.jpg"
+    },
+    {
+        "nombre": "Phantom Intense",
+        "path": "paco-rabanne-phantom-intense",
+        "version": "edp",
+        "descripcion": "Phantom Intense de Paco Rabanne es una fragancia de la familia olfativa Amaderada A",
+        "tamaño": 100,
+        "precio": 400,
+        "imagen": "https://home.ripley.com.pe/Attachment/WOP_5/2014336552209/2014336552209-4.jpg"
+    }
+]

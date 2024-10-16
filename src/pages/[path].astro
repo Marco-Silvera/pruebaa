@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import pDior from "../db/dior.json";
+import pPacoRabanne from "../db/paco-rabanne.json";
+import pChanel from "../db/chanel.json";
+
+
+export async function getStaticPaths() {
+    // cargar todos los perfumes en una lista
+    const allPerfumes = [...pDior, ...pPacoRabanne,...pChanel];
+
+    return allPerfumes.map((perfume) => ({
+        params: { path: perfume.path },
+        props: { perfume },
+    }));
+}
+
+const { perfume } = Astro.props;
+---
+
+<Layout title={perfume.nombre}>
+    <h1>{perfume.nombre}</h1>
+    <img src={perfume.imagen} alt={perfume.nombre} />
+    <p>{perfume.descripcion}</p>
+    <p>Versión: {perfume.version}</p>
+    <p>Tamaño: {perfume.tamaño}</p>
+    <p>Precio: {perfume.precio}</p>
+</Layout>
