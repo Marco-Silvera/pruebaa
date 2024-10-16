@@ -1,4 +1,45 @@
 ---
+// src/pages/index.astro
+import Layout from "../layouts/Layout.astro";
+import { app } from "../firebase/server";
+import { getFirestore } from "firebase-admin/firestore";
+
+interface Friend {
+	id: string;
+	name: string;
+	age: number;
+	isBestFriend: boolean;
+}
+
+// Conectar a Firestore
+const db = getFirestore(app);
+const friendsRef = db.collection("friends");
+const friendsSnapshot = await friendsRef.get();
+
+// Obtener los amigos de Firestore
+const friends = friendsSnapshot.docs.map((doc) => ({
+	id: doc.id,
+	...doc.data(),
+})) as Friend[];
+---
+
+<Layout title="Lista de Amigos">
+	<h1>Lista de Amigos</h1>
+	<ul>
+		{
+			friends.map((friend) => (
+				<li key={friend.id}>
+					<a href={`/friend/${friend.id}`}>{friend.name}</a>
+					<span> ({friend.age})</span>
+					<strong>
+						{friend.isBestFriend ? "Mejor amigo" : "Amigo"}
+					</strong>
+				</li>
+			))
+		}
+	</ul>
+</Layout>
+<!-- ---
 import Layout from "../layouts/Layout.astro";
 import pDior from "../db/dior.json";
 import pPacoRabanne from "../db/paco-rabanne.json";
@@ -22,4 +63,4 @@ const perfumes = [...pDior, ...pPacoRabanne, ...pChanel];
 	</p>
 	
 	<OrderSelect perfumes={perfumes} client:load />
-</Layout>
+</Layout> -->

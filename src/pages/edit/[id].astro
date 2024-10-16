@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { app } from "../../firebase/server";
+import { getFirestore } from "firebase-admin/firestore";
+
+interface Friend {
+    name: string;
+    age: number;
+    isBestFriend: boolean;
+}
+
+const { id } = Astro.params;
+
+if (!id) {
+    return Astro.redirect("/404");
+}
+
+const db = getFirestore(app);
+const friendsRef = db.collection("friends");
+const friendSnapshot = await friendsRef.doc(id).get();
+
+if (!friendSnapshot.exists) {
+    return Astro.redirect("/404");
+}
+
+const friend = friendSnapshot.data() as Friend;
+---
+
+<Layout title="Editar {friend.name}">
+    <h1>Editar {friend.name}</h1>
+    <p>Aquí puedes editar o borrar los datos de tus amigos.</p>
+    <form method="post" action={`/api/friends/${id}`}>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" value={friend.name} />
+        <label for="age">Edad</label>
+        <input type="number" id="age" name="age" value={friend.age} />
+        <label for="isBestFriend">¿Es mejor amigo?</label>
+        <input
+            type="checkbox"
+            id="isBestFriend"
+            name="isBestFriend"
+            checked={friend.isBestFriend}
+        />
+        <button type="submit">Editar amigo</button>
+    </form>
+    <button type="button" id="delete-document">Eliminar</button>
+</Layout>
+<script>
+    const deleteButton = document.getElementById(
+        "delete-document",
+    ) as HTMLButtonElement;
+    const url = document
+        .querySelector("form")
+        ?.getAttribute("action") as string;
+    deleteButton.addEventListener("click", async () => {
+        const response = await fetch(url, {
+            method: "DELETE",
+        });
+        if (response.redirected) {
+            window.location.assign(response.url);
+        }
+    });
+</script>

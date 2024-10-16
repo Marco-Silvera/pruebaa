@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Agregar un nuevo amigo">
+    <h1>Agregar un nuevo amigo</h1>
+    <form method="post" action="/api/friends">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" />
+        <label for="age">Edad</label>
+        <input type="number" id="age" name="age" />
+        <label for="isBestFriend">¿Es mejor amigo?</label>
+        <input type="checkbox" id="isBestFriend" name="isBestFriend" />
+        <button type="submit">Añadir amigo</button>
+    </form>
+</Layout>
